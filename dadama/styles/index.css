@@ -1,0 +1,187 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Poppins', sans-serif;;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.bg-navbar{
+    background-color: #fff;
+    padding: 1.8rem .7rem;
+    color: #ffff;
+    font-size: 2.2rem;
+}
+.nav-link{
+    color: #7a4fd8!important;
+    font-size: 1.5rem!important;
+    font-weight: 500;
+}
+.nav-link:hover{
+    color: #EB1D36!important;
+    transition: .3s all;
+}
+.navbar-nav:first-child{
+    margin-top: 1rem;
+}
+.navbar-nav{
+    gap: 1rem;
+}
+@media (min-width: 768px) { 
+    .navbar-nav:first-child{
+        margin-top: 0;
+    }
+    .navbar-nav{
+        gap: 2rem;
+    }
+}
+.degradado{
+    color: transparent;
+    background: linear-gradient(to right, #EB1D36 0%, #7a4fd8 100% );
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.brand-img{
+    width: 22rem;
+    height: 7rem;
+    border-radius: 10rem;
+}
+
+.hero{
+    background-image: url(../images/playground.jpg);
+    background-size: cover;
+    background-position: -40 center;
+    background-repeat: no-repeat;
+    padding: 2rem;
+}
+@media (min-width: 768px) { 
+    .hero{
+        background: linear-gradient(-10deg, rgba(20, 78, 204, 0) 0%, #3A76D1 100%), url(../images/playground.jpg), #3A76D1;
+        background-size: cover;
+        background-position: -40 center;
+        background-repeat: no-repeat;
+        padding: 15rem;
+    }
+}
+.hero__grid{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.hero__titulo{
+    color: transparent;
+    background: linear-gradient(to right, #a1bf38 0%, #7a4fd8 100% );
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+@media (min-width: 768px) { 
+    .hero__titulo{
+        font-size: 5rem;
+        color: #fff;
+    }
+}
+.hero__grid-grados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+@media (min-width: 768px) { 
+    .hero__grid-grados{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+}
+@media (min-width: 1000px) { 
+    .hero__grid-grados{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.hero__card{
+    background-color: #fff;
+    padding: 4rem;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 10px 40px rgba(3,19,23, 0.25);
+}
+.hero__icon{
+    max-width: 15rem;
+    margin-bottom: 2rem;
+}
+.card__titulo{
+    color: transparent;
+    background: linear-gradient(to right, #EB1D36 0%, #3B44F6 100% );
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.card__descripcion{
+    color: transparent;
+    background: linear-gradient(to right, #36AE7C 0%, #EB1D36 100% );
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.btn_aprender{
+    padding: 1.7rem 1rem;
+    background-color: #7a4fd8;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.8rem;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    text-decoration: none;
+}
+.btn_aprender:hover{
+    cursor: pointer;
+    background-color: #937DC2;
+    color: #ffff;
+}
+
+.footer{
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 1.7rem 2rem;
+    background-color: #7a4fd8;
+}
+@media (min-width: 768px) { 
+    .footer{
+        font-size: 2rem;
+        padding: 1.7rem 0;
+    }
+}
+.footer__copy{
+    font-size: 1.6rem;
+}
+.img_logo{ width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
